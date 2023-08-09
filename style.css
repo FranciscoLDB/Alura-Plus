@@ -159,7 +159,7 @@ body{
 }
 
 .rodape__imagem{
-    width: 5%;
+    width: 5em;
     margin-bottom: 2em;
 }
 
@@ -176,4 +176,45 @@ body{
 
 .rodape__link:hover{
     color: var(--azul-botao);
+}
+
+@media (max-width: 768px) {
+    body {
+        text-align: center;
+    }
+
+    .principal {
+        background-image: none;
+    }
+
+    .principal__chamada {
+        width: auto;
+    }
+
+    .secundaria__secao {
+        flex-direction: column;
+    }
+    
+    .secundaria__secao:nth-child(2) {
+        flex-direction: column-reverse;
+    }
+
+    .secundaria__secao__img {
+        width: 50vw;
+    }
+
+    .secundaria__secao__caixa {
+        width: 80%;
+        align-items: center;
+    }
+    
+    .dispositivos__itens{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .rodape__nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
